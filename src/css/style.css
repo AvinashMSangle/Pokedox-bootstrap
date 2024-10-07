@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Teachers;
+}
+
+body{
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);;
+    min-height: 100vh;
+}
+
+.card {
+  height: 100%;
+  transition: all ease 0.7s;
+  border-radius: 15%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}

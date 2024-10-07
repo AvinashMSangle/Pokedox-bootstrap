@@ -17,4 +17,5 @@ export default function (data) {
         </div>
         </div>`;
   dataRow.appendChild(div);
+
 }
