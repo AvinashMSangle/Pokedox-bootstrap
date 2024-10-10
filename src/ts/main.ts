@@ -6,16 +6,18 @@ import Fuse from "fuse.js";
 import "../scss/main.scss"; // Styling
 import data from "./data.json"; // Data
 import PokemonCard from "./components/PokemonCard"; // Component
+import { Pokemon } from "../interface/Pokemon"
+
 
 //Custom type representing
-interface Pokemon{
-    "id": number,
-    "name": string,
-    "image": string,
-    "description": string,
-    "link": string,
-    "abilities": string[]
-}
+// interface Pokemon{
+//     "id": number,
+//     "name": string,
+//     "image": string,
+//     "description": string,
+//     "link": string,
+//     "abilities": string[]
+// }
 
 // === DOM Targeting ===
 const inputEl = document.querySelector(
@@ -80,10 +82,10 @@ inputEl.addEventListener("input", (e) => {
 });
 
 // Add / to active search
-document.addEventListener("keydown", (e: KeyboardEvent) => {
+document.addEventListener("keyup", (e: KeyboardEvent) => {
   if (e.key === "/") {
     // Don't type
-    e.preventDefault();
+    // e.preventDefault();
     inputEl.focus();
   }
 });
